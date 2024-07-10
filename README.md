@@ -1,1 +1,1 @@
-# my-website
+# start up for new directory
