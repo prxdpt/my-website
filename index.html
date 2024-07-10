@@ -1,121 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pradipta Roy | Resume</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
-
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pradipta Roy</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- // Intro -->
-    <header>
-        <div class="content-wrap">
-            <img class="profile-img column-narrow" src="me.jpg" alt="Pradipta Roy" width="200" height="200">
-            
-            <div class="column-wide">
-              <h1 class="doodoo">Pradipta Roy</h1>
-              <h2 class="yummy">DevOps Engineer</h2>
-              <p class="misaka">As a developer, I specialize in creating modular and scalable front-end architectures. As an educator, I focused on creating inclusive learning environments and curriculum development. I'm also a certified <a href="#" class="p">BODYPUMP</a> Instructor for GoodLife Fitness!</p>
-            </div>
-        </div>
-    </header>
-    
-    <main> 
-        <!-- // Work Experience -->
-        <section class="work">
-            <div class="content-wrapwrap">
-                <h2>Work Experience</h2>
+  <header>
+    <h1>Pradipta Roy</h1>
+    <p></p>
+    <button id="show-contact">Show Contact Info</button>
+    <div id="contact-info" style="display: none;">
+      <p>
+        <a href="https://www.linkedin.com/in/pradiptaa-roy">LinkedIn</a> |
+        <a href="mailto:thepradipta002@gmail.com">thepradipta002@gmail.com</a> |
+        8974741749 | Agartala, Tripura
+      </p>
+    </div>
+  </header>
+  <main>
+    <section class="work-experience">
+      <h2>Work Experience</h2>
+      <article>
+        <h3>Amdocs - Pune, India</h3>
+        <h4>Software Engineer (Infra Developer) - June 2022 - Present</h4>
+        <ul>
+          <li>Reduced system downtime by 17% through proactive monitoring using liveness and readiness probes, ensuring 99.9% system stability. Acquired proficiency in Go lang during the project.</li>
+          <li>Enhanced product capabilities and user satisfaction by introducing new features and supporting backtracking functionalities in ECS assembly.</li>
+          <li>Optimized resource allocation and increased overall system performance by 25% by leading resource profiling efforts and creating 30+ Helm charts for various services.</li>
+          <li>Expedited migration process and improved configuration accuracy by 15% by authoring manifest files (domain and environment descriptors).</li>
+          <li>Contributed to a 20% reduction in deployment time by successfully migrating the Evolved Charging Suite (ECS) to Amdocs CI/CD platform MPDK, implementing pipelines in Jenkins, and establishing repositories for 4 projects.</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Ritusha Consultant Private Ltd. - Bhubaneswar, Odisha</h4>
+        <h4>Winter Trainee - December 2019</h4>
+        <ul>
+          <li>Successfully developed a game incorporating pathfinding visualization tools using Python and related libraries in collaboration with a team of 5+ students.</li>
+          <li>Demonstrated strong knowledge and skills in Microsoft technologies by achieving an impressive 88% score in the Microsoft Technology Associate (MTA) certification exam.</li>
+        </ul>
+      </article>
+    </section>
+    <section class="education">
+        <h2>Education</h2>
+        <p>National Institute of Technology, Agartala - Agartala, Tripura</p>
+        <p>Bachelor of Technology, Computer Science and Engineering (2018-2022)</p>
+      </section>
+    <section class="skills">
+      <h2>Skills & Interests</h2>
+      <button id="show-more-skills">See tech stack</button>
+      <div id="expanded-skills" style="display: none;">
+        <p>GoLang | Python | MySQL | OracleSQL | C++ (DSA) | C++ (OOPs) | Java | AWS | Azure | Jenkins | Jira | Bitbucket | CI/CD | GCP | Perl</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Pradipta Roy</p>
+  </footer>
+  <script>
+    const showMoreButton = document.getElementById('show-more-skills');
+    const expandedSkills = document.getElementById('expanded-skills');
+    const showContactButton = document.getElementById('show-contact');
+    const contactInfo = document.getElementById('contact-info');
 
-                <!-- Job Details: copy this block to add more positions. -->
-                <div class="column-narrow">
-                    <h3>Front-end Developer & Educator</h3>
-                    <p>Independent / Freelance</p>
-                    <p>January 2012 - Present</p>
-                </div>
-                <div class="column-wide">
-                  <p>Provides various front-end related services ranging from development work, consultations, speaking engagements, corporate training, workshops and online courses.</p>
-                  <p>See more at <a href="http://your-website.com">your-website.com</a>.</p>
-                </div>
-                
-                <!-- Job Details -->
-                <div class="column-narrow">
-                    <h3>Director of Curriculum</h3>
-                    <p>Ladies Learning Code</p>
-                    <p>July 2014 - February 2016</p>
-                </div>
-                
-                <div class="column-wide">
-                    <p>Created and managed all adult focused curriculum, instructor training and tech related strategies and duties.</p>
+    showMoreButton.addEventListener('click', () => {
+      expandedSkills.style.display = expandedSkills.style.display === 'none' ? 'block' : 'none';
+    });
 
-                    <p>Key contributions:</p>
-                    <ul>
-                        <li>Created 9 new workshops focusing on HTML, CSS, JavaScript, jQuery, Wordpress and Responsive Web Design.</li>
-                        <li>Created all Hackapalooza content (2 day conference style event), consisting of 2-4 hour workshop sessions focused on front-end coding languages and web development related topics.</li>
-                        <li>Lead instructor and created curriculum for the Digital Skills part-time program.</li>
-                        <li>Provided training for all lead instructors, across all Canadian chapters, focusing on creating an inclusive and engaging learning environment.</li>
-                        <li>Maintained the ladieslearningcode.com website.</li>
-                        <li>Created slide deck template for consistent national workshop branding.</li>
-                    </ul>
-                </div>
-                
-                <!-- Job Details -->
-                <div class="column-narrow">
-                    <h3>Lead Front-End Developer</h3>
-                    <p>Field ID</p>
-                    <p>March 2013 - February 2014</p>
-                </div>
-                <div class="column-wide">
-                    <p>Lead the front-end development for in-house safety inspection software.</p>
-                    <p>Key contributions:</p>
-                    <ul>
-                        <li>Responsible for recommendations, setting code standards for the front-end development.</li>
-                        <li>Created a fully customized front-end framework, including UI/UX.</li>
-                        <li>Standardized the site architecture and design. The framework contains reusable components and extensible classes for customization and flexibility.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- // Education -->
-        <section class="education">
-            <div class="content-wrap">
-                <h2>Education</h2>
-
-                <!-- School details: copy this block to add more schools. -->
-                <h3>Seneca College - Toronto, ON</h3>
-                <h4>Webmaster Content Site Design Certificate, 2006</h4>
-                <p>14 week full-time program.</p>
-                
-                <h3>York University - Toronto, ON</h3>
-                <h4>Bachelor of Arts, 2001-2005</h4>
-                <p>Double Major in Communications & Psychology.</p>
-                
-                <h3>San Jose State University - San Jose, CA</h3>
-                <h4>General Studies, 2000</h4>
-                <p>First year general studies.</p>
-            </div>
-        </section>
-    </main>
-    
-    <!-- // Footer & contact info -->
-    <footer>
-        <div class="content-wrap">
-            <h2 class="yaya">Let's Keep in Touch!</h2>
-            
-            <!-- Social media and contact links. Add or remove any networks. -->
-            <div class="contact-info">
-                <a href="mailto:email@example.com">email@example.com</a>
-                <a href="http://yourwebsite.com">yourwebsite.com</a>
-                <a href="#">Twitter</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Facebook</a>
-            </div>
-
-            <p>Copyright 2017 by Your Name</p>
-        </div>
-    </footer>
+    showContactButton.addEventListener('click', () => {
+      contactInfo.style.display = contactInfo.style.display === 'none' ? 'block' : 'none';
+    });
+  </script>
 </body>
 </html>

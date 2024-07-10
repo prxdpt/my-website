@@ -1,73 +1,91 @@
-/* Color Palette
-#2B2D42 - dark blue
-#8D99AE - ocean blue
-#EDF2F4 - blue/white
-#EF233C - red
-#1f0e48 - night blue
-#8ea1fe - Indigo 
-#e2ecfe - light blue
-#574bf8 - dark blue
-
-*/
-
-
-h1 {    
-    font-family: 'Caveat', cursive;
-    font-size: 35px;
-    
-}
-
-h2 {    
-    font-family: 'Caveat', cursive;
-    font-size: 75px;
-    
-}
-
 body {
-    font-family: 'Open Sans', sans-serif !important;
-} 
-
-a {
-    color: red;
-}
-
-section.work {
-    padding-left: 30px;
-    background-color: #EDF2F4;
-}
-
-section.education {
-    padding-left: 30px;
-    background-color: #8D99AE;
-}
-
-header {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
     text-align: center;
-    color: #1f0e48;
-    background-color: #8ea1fe !important;
-}
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+  
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 40px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  p, ul {
+    font-size: 1em;
+    line-height: 1.5; /* Improves readability */
+  }
+  
+  /* New styles for the skills section */
+  #show-more-skills {
+    background-color: #3498db; /* Adjust button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Indicates clickable element */
+    transition: background-color 0.2s ease; /* Smooth hover effect */
+    margin-top: 10px; /* Add some space above the button */
+  }
+  
+  #show-more-skills:hover {
+    background-color: #2980b9; /* Darken on hover */
+  }
+  
+  #expanded-skills {
+    padding: 10px;
+    margin-top: 10px; /* Add spacing after the button */
+    border: 1px solid #ddd; /* Optional: add a border */
+    border-radius: 5px; /* Optional: add rounded corners */
+    display: none; /* Initially hidden */
+  }
+  
 
-footer {
-    text-align: center;
-    background-color: #e2ecfe;
-    color: #e2ecfe;
-    
-}
-
-.yaya {
-   color: #574bf8;
-}
-    
-.doodoo {
-    color: #EDF2F4;
-}
-
-.yummy {
-    color: #EDF2F4;
-}
-
-.misaka {
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 20px;
-}
+    /* New styles for the contact section */
+    #show-contact {
+        background-color: #3498db; /* Adjust button color */
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer; /* Indicates clickable element */
+        transition: background-color 0.2s ease; /* Smooth hover effect */
+        margin-top: 10px; /* Add some space above the button */
+      }
+      
+      #show-contact:hover {
+        background-color: #2980b9; /* Darken on hover */
+      }
+      
+      #contact-info {
+        padding: 10px;
+        margin-top: 10px; /* Add spacing after the button */
+        border: 1px solid #ddd; /* Optional: add a border */
+        border-radius: 5px; /* Optional: add rounded corners */
+        display: none; /* Initially hidden */
+      }
