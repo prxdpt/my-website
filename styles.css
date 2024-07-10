@@ -1,0 +1,73 @@
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE - ocean blue
+#EDF2F4 - blue/white
+#EF233C - red
+#1f0e48 - night blue
+#8ea1fe - Indigo 
+#e2ecfe - light blue
+#574bf8 - dark blue
+
+*/
+
+
+h1 {    
+    font-family: 'Caveat', cursive;
+    font-size: 35px;
+    
+}
+
+h2 {    
+    font-family: 'Caveat', cursive;
+    font-size: 75px;
+    
+}
+
+body {
+    font-family: 'Open Sans', sans-serif !important;
+} 
+
+a {
+    color: red;
+}
+
+section.work {
+    padding-left: 30px;
+    background-color: #EDF2F4;
+}
+
+section.education {
+    padding-left: 30px;
+    background-color: #8D99AE;
+}
+
+header {
+    text-align: center;
+    color: #1f0e48;
+    background-color: #8ea1fe !important;
+}
+
+footer {
+    text-align: center;
+    background-color: #e2ecfe;
+    color: #e2ecfe;
+    
+}
+
+.yaya {
+   color: #574bf8;
+}
+    
+.doodoo {
+    color: #EDF2F4;
+}
+
+.yummy {
+    color: #EDF2F4;
+}
+
+.misaka {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+}
