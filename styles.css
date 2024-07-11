@@ -1,23 +1,37 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: #000000; /* AMOLED black background */
+    color: #ffccff; /* Light pink text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
-    background-color: #f8f9fa;
+    background-color: #000000; /* Match the body background */
     padding: 20px;
     text-align: center;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(255, 204, 255, 0.1); /* Light pink shadow */
+    margin-bottom: 20px;
 }
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5em;
-    color: #2c3e50;
-    margin-bottom: 0;
+    font-size: 3em;
+    color: #ffccff; /* Light pink */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ffccff; /* Light pink */
+    margin-top: 0;
 }
 
 a {
-    color: #3498db;
+    color: #ff99cc; /* Slightly different shade of light pink for links */
     text-decoration: none;
 }
 
@@ -27,6 +41,10 @@ a:hover {
 
 main {
     padding: 40px;
+    background-color: #000000; /* Match the body background */
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(255, 204, 255, 0.1); /* Light pink shadow */
+    margin-bottom: 20px;
 }
 
 section {
@@ -36,17 +54,17 @@ section {
 h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2em;
-    color: #34495e;
+    color: #ff99cc; /* Slightly different shade of light pink */
     margin-bottom: 10px;
 }
 
 .education h2, .work-experience h2 {
-    color: #3498db; /* Make the headings blue */
+    color: #ff99cc; /* Make the headings light pink */
 }
 
 h3, h4 {
     font-family: 'Roboto', sans-serif;
-    color: #2c3e50;
+    color: #ffccff; /* Light pink */
 }
 
 p, ul {
@@ -54,10 +72,37 @@ p, ul {
     line-height: 1.6; /* Improves readability */
 }
 
+li {
+    position: relative;
+}
+
+.details-btn {
+    background-color: #ff99cc; /* Light pink button */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.details-btn:hover {
+    background-color: #ff66b2; /* Darker pink on hover */
+}
+
+.details-content {
+    display: none;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #1a1a1a; /* Dark grey background for content */
+    border: 1px solid #ffccff; /* Light pink border */
+    border-radius: 5px;
+}
+
 /* New styles for the skills section */
 #show-more-skills {
-    background-color: #3498db; /* Adjust button color */
-    color: #fff;
+    background-color: #ff99cc; /* Adjust button color */
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -67,22 +112,22 @@ p, ul {
 }
 
 #show-more-skills:hover {
-    background-color: #2980b9; /* Darken on hover */
+    background-color: #ff66b2; /* Darken on hover */
 }
 
 #expanded-skills {
     padding: 10px;
     margin-top: 10px; /* Add spacing after the button */
-    border: 1px solid #ddd; /* Optional: add a border */
+    border: 1px solid #ffccff; /* Optional: add a border */
     border-radius: 5px; /* Optional: add rounded corners */
-    background-color: #ecf0f1;
+    background-color: #1a1a1a;
     display: none; /* Initially hidden */
 }
 
 /* New styles for the contact section */
 #show-contact {
-    background-color: #3498db; /* Adjust button color */
-    color: #fff;
+    background-color: #ff99cc; /* Adjust button color */
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -92,14 +137,20 @@ p, ul {
 }
 
 #show-contact:hover {
-    background-color: #2980b9; /* Darken on hover */
+    background-color: #ff66b2; /* Darken on hover */
 }
 
 #contact-info {
     padding: 10px;
     margin-top: 10px; /* Add spacing after the button */
-    border: 1px solid #ddd; /* Optional: add a border */
+    border: 1px solid #ffccff; /* Optional: add a border */
     border-radius: 5px; /* Optional: add rounded corners */
-    background-color: #ecf0f1;
+    background-color: #1a1a1a;
     display: none; /* Initially hidden */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffccff; /* Light pink */
 }
