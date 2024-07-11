@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pradipta Roy</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&family=Chivo+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>Pradipta Roy</h1>
-    <p>Software Developer at Amdocs R&D, actively engaged in leveraging cutting-edge DevOps tools, including Kubernetes, Groovy, Helm charts, and Jenkins Builds. My hands-on experience extends to managing Kubernetes clusters, configuring pods, and orchestrating Jenkins Builds using YAML, Manifest files, JSON, and more.</p>
+    <div id="greetings"></div>
+    <p>I'm a Software Developer at Amdocs R&D, specializing in DevOps with Kubernetes, Groovy, Helm charts, Jenkins Builds, and Java application development for enterprise-level products.</p>
     <button id="show-contact">Show Contact Info</button>
     <div id="contact-info" style="display: none;">
       <p>
@@ -97,6 +98,19 @@
     const expandedSkills = document.getElementById('expanded-skills');
     const showContactButton = document.getElementById('show-contact');
     const contactInfo = document.getElementById('contact-info');
+    const greetingsContainer = document.getElementById('greetings');
+    const greetings = ['Hello!', 'নমস্কার!', 'नमस्ते!', 'Hola!', 'Bonjour!'];
+    let currentGreetingIndex = 0;
+
+    // Function to display greetings in interval
+    function displayGreetings() {
+      greetingsContainer.textContent = greetings[currentGreetingIndex];
+      currentGreetingIndex = (currentGreetingIndex + 1) % greetings.length;
+      setTimeout(displayGreetings, 700); // Interval of 700ms
+    }
+
+    // Initial call to start displaying greetings
+    displayGreetings();
 
     showMoreButton.addEventListener('click', () => {
       expandedSkills.style.display = expandedSkills.style.display === 'none' ? 'block' : 'none';
