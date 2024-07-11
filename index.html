@@ -31,48 +31,44 @@
       <article>
         <h3>Amdocs - Pune, India</h3>
         <h4>Software Engineer (Infra Developer) - June 2022 - Present</h4>
-        <ul>
-          <li>
-            Reduced system downtime by 17% through proactive monitoring using liveness and readiness probes, ensuring 99.9% system stability. Acquired proficiency in Go lang during the project.
-            <button class="details-btn" data-target="details-1">More</button>
-            <div id="details-1" class="details-content">Detailed information about this achievement.</div>
-          </li>
-          <li>
-            Enhanced product capabilities and user satisfaction by introducing new features and supporting backtracking functionalities in ECS assembly.
-            <button class="details-btn" data-target="details-2">More</button>
-            <div id="details-2" class="details-content">Detailed information about this achievement.</div>
-          </li>
-          <li>
-            Optimized resource allocation and increased overall system performance by 25% by leading resource profiling efforts and creating 30+ Helm charts for various services.
-            <button class="details-btn" data-target="details-3">More</button>
-            <div id="details-3" class="details-content">Detailed information about this achievement.</div>
-          </li>
-          <li>
-            Expedited migration process and improved configuration accuracy by 15% by authoring manifest files (domain and environment descriptors).
-            <button class="details-btn" data-target="details-4">More</button>
-            <div id="details-4" class="details-content">Detailed information about this achievement.</div>
-          </li>
-          <li>
-            Contributed to a 20% reduction in deployment time by successfully migrating the Evolved Charging Suite (ECS) to Amdocs CI/CD platform MPDK, implementing pipelines in Jenkins, and establishing repositories for 4 projects.
-            <button class="details-btn" data-target="details-5">More</button>
-            <div id="details-5" class="details-content">Detailed information about this achievement.</div>
-          </li>
+        <section class="tech-used">
+          <h4>Tech Used</h4>
+          <div class="tech-images">
+            <!-- Add images here -->
+            <img src="image1.png" alt="Tech 1">
+            <img src="image2.png" alt="Tech 2">
+            <img src="image3.png" alt="Tech 3">
+            <img src="image4.png" alt="Tech 4">
+            <img src="image5.png" alt="Tech 5"> 
+            <img src="image6.png" alt="Tech 6">                                  
+            <!-- Add more images as needed -->
+          </div>
+        </section>
+        <button class="utilisation-btn" data-target="amdocs-details">How they were utilised</button>
+        <ul id="amdocs-details" class="utilisation-content">
+          <li>Reduced system downtime by 17% through proactive monitoring using liveness and readiness probes, ensuring 99.9% system stability. Acquired proficiency in Go lang during the project.</li>
+          <li>Enhanced product capabilities and user satisfaction by introducing new features and supporting backtracking functionalities in ECS assembly.</li>
+          <li>Optimized resource allocation and increased overall system performance by 25% by leading resource profiling efforts and creating 30+ Helm charts for various services.</li>
+          <li>Expedited migration process and improved configuration accuracy by 15% by authoring manifest files (domain and environment descriptors).</li>
+          <li>Contributed to a 20% reduction in deployment time by successfully migrating the Evolved Charging Suite (ECS) to Amdocs CI/CD platform MPDK, implementing pipelines in Jenkins, and establishing repositories for 4 projects.</li>
         </ul>
       </article>
       <article>
         <h3>Ritusha Consultant Private Ltd. - Bhubaneswar, Odisha</h3>
         <h4>Winter Trainee - December 2019</h4>
-        <ul>
-          <li>
-            Successfully developed a game incorporating pathfinding visualization tools using Python and related libraries in collaboration with a team of 5+ students.
-            <button class="details-btn" data-target="details-6">More</button>
-            <div id="details-6" class="details-content">Detailed information about this achievement.</div>
-          </li>
-          <li>
-            Demonstrated strong knowledge and skills in Microsoft technologies by achieving an impressive 88% score in the Microsoft Technology Associate (MTA) certification exam.
-            <button class="details-btn" data-target="details-7">More</button>
-            <div id="details-7" class="details-content">Detailed information about this achievement.</div>
-          </li>
+        <section class="tech-used">
+          <h4>Tech Used</h4>
+          <div class="tech-images">
+            <!-- Add images here -->
+            <img src="image7.png" alt="Tech 7">           
+            <img src="image8.png" alt="Tech 8">                       
+            <!-- Add more images as needed -->
+          </div>
+        </section>
+        <button class="utilisation-btn" data-target="ritusha-details">How they were utilised</button>
+        <ul id="ritusha-details" class="utilisation-content">
+          <li>Successfully developed a game incorporating pathfinding visualization tools using Python and related libraries in collaboration with a team of 5+ students.</li>
+          <li>Demonstrated strong knowledge and skills in Microsoft technologies by achieving an impressive 88% score in the Microsoft Technology Associate (MTA) certification exam.</li>
         </ul>
       </article>
     </section>
@@ -101,8 +97,8 @@
       contactInfo.style.display = contactInfo.style.display === 'none' ? 'block' : 'none';
     });
 
-    const detailButtons = document.querySelectorAll('.details-btn');
-    detailButtons.forEach(button => {
+    const utilisationButtons = document.querySelectorAll('.utilisation-btn');
+    utilisationButtons.forEach(button => {
       button.addEventListener('click', () => {
         const targetId = button.getAttribute('data-target');
         const content = document.getElementById(targetId);
