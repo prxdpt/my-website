@@ -113,12 +113,21 @@ li {
 }
 
 .tech-images img {
+    position: relative;
     width: 80px;
     height: 80px;
     object-fit: contain; /* Maintain aspect ratio, fit within given dimensions */
     border-radius: 5px;
     padding: 5px; /* Add padding around images */
     background-color: #343A40; /* Background color for padding area */
+    cursor: pointer; /* Indicate that the images are interactive */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+.tech-images img:hover {
+    transform: scale(1.2); /* Scale up the image */
+    box-shadow: 0 4px 15px rgba(153, 204, 255, 0.5); /* Add a shadow for the pop-up effect */
+    z-index: 1; /* Ensure the hovered image appears above others */
 }
 
 /* New styles for the skills section */
