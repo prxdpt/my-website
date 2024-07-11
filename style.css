@@ -1,37 +1,37 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #000000; /* AMOLED black background */
-    color: #ffccff; /* Light pink text */
+    background-color: #1a1a1a; /* Dark background */
+    color: #99ccff; /* Light blue text */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 header {
-    background-color: #000000; /* Match the body background */
+    background-color: #1a1a1a; /* Match the body background */
     padding: 20px;
     text-align: center;
     width: 80%;
-    box-shadow: 0 4px 8px rgba(255, 204, 255, 0.1); /* Light pink shadow */
+    box-shadow: 0 4px 8px rgba(153, 204, 255, 0.1); /* Light blue shadow */
     margin-bottom: 20px;
 }
 
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3em;
-    color: #ffccff; /* Light pink */
+    color: #99ccff; /* Light blue */
     margin-bottom: 10px;
 }
 
 header p {
     font-size: 1.2em;
-    color: #ffccff; /* Light pink */
+    color: #99ccff; /* Light blue */
     margin-top: 0;
 }
 
 a {
-    color: #ff99cc; /* Slightly different shade of light pink for links */
+    color: #6699ff; /* Slightly different shade of blue for links */
     text-decoration: none;
 }
 
@@ -41,9 +41,9 @@ a:hover {
 
 main {
     padding: 40px;
-    background-color: #000000; /* Match the body background */
+    background-color: #1a1a1a; /* Match the body background */
     width: 80%;
-    box-shadow: 0 4px 8px rgba(255, 204, 255, 0.1); /* Light pink shadow */
+    box-shadow: 0 4px 8px rgba(153, 204, 255, 0.1); /* Light blue shadow */
     margin-bottom: 20px;
 }
 
@@ -54,17 +54,17 @@ section {
 h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2em;
-    color: #ff99cc; /* Slightly different shade of light pink */
+    color: #6699ff; /* Slightly different shade of blue */
     margin-bottom: 10px;
 }
 
 .education h2, .work-experience h2 {
-    color: #ff99cc; /* Make the headings light pink */
+    color: #6699ff; /* Make the headings light blue */
 }
 
 h3, h4 {
     font-family: 'Roboto', sans-serif;
-    color: #ffccff; /* Light pink */
+    color: #99ccff; /* Light blue */
 }
 
 p, ul {
@@ -76,8 +76,8 @@ li {
     position: relative;
 }
 
-.details-btn {
-    background-color: #ff99cc; /* Light pink button */
+.details-btn, .utilisation-btn {
+    background-color: #6699ff; /* Light blue button */
     color: black;
     border: none;
     border-radius: 5px;
@@ -86,22 +86,41 @@ li {
     margin-top: 5px;
 }
 
-.details-btn:hover {
-    background-color: #ff66b2; /* Darker pink on hover */
+.details-btn:hover, .utilisation-btn:hover {
+    background-color: #3366cc; /* Darker blue on hover */
 }
 
-.details-content {
+.details-content, .utilisation-content {
     display: none;
     margin-top: 5px;
     padding: 10px;
-    background-color: #1a1a1a; /* Dark grey background for content */
-    border: 1px solid #ffccff; /* Light pink border */
+    background-color: #343A40; /* Dark grey background for content */
+    border: 1px solid #99ccff; /* Light blue border */
     border-radius: 5px;
+}
+
+.tech-used {
+    margin-top: 10px;
+}
+
+.tech-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-images img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain; /* Maintain aspect ratio, fit within given dimensions */
+    border-radius: 5px;
+    padding: 5px; /* Add padding around images */
+    background-color: #343A40; /* Background color for padding area */
 }
 
 /* New styles for the skills section */
 #show-more-skills {
-    background-color: #ff99cc; /* Adjust button color */
+    background-color: #6699ff; /* Adjust button color */
     color: black;
     padding: 10px 20px;
     border: none;
@@ -112,21 +131,21 @@ li {
 }
 
 #show-more-skills:hover {
-    background-color: #ff66b2; /* Darken on hover */
+    background-color: #3366cc; /* Darken on hover */
 }
 
 #expanded-skills {
     padding: 10px;
     margin-top: 10px; /* Add spacing after the button */
-    border: 1px solid #ffccff; /* Optional: add a border */
+    border: 1px solid #99ccff; /* Optional: add a border */
     border-radius: 5px; /* Optional: add rounded corners */
-    background-color: #1a1a1a;
+    background-color: #343A40;
     display: none; /* Initially hidden */
 }
 
 /* New styles for the contact section */
 #show-contact {
-    background-color: #ff99cc; /* Adjust button color */
+    background-color: #6699ff; /* Adjust button color */
     color: black;
     padding: 10px 20px;
     border: none;
@@ -137,20 +156,20 @@ li {
 }
 
 #show-contact:hover {
-    background-color: #ff66b2; /* Darken on hover */
+    background-color: #3366cc; /* Darken on hover */
 }
 
 #contact-info {
     padding: 10px;
     margin-top: 10px; /* Add spacing after the button */
-    border: 1px solid #ffccff; /* Optional: add a border */
+    border: 1px solid #99ccff; /* Optional: add a border */
     border-radius: 5px; /* Optional: add rounded corners */
-    background-color: #1a1a1a;
+    background-color: #343A40;
     display: none; /* Initially hidden */
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
-    color: #ffccff; /* Light pink */
+    color: #99ccff; /* Light blue */
 }
