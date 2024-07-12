@@ -39,8 +39,28 @@
     <section class="work-experience">
       <h2>Work Experience</h2>
       <article>
-        <h3>Senior Software Engineer (DevOps Engineer) </h3>
+        <h3>Experienced Software Engineer (DevOps Engineer) </h3>
         <h4>Amdocs - Pune, India (Jan 2024 - Present)</h4>
+        <section class="tech-used">
+          <h4>Tech Used</h4>
+          <div class="tech-images">
+            <!-- Add images here -->
+            <img src="images\image11.png" alt="Tech 11">
+            <img src="images\image10.png" alt="Tech 10">
+            <img src="images\image14.png" alt="Tech 14">
+            <img src="images\image15.png" alt="Tech 15">                                  
+            <img src="images\image9.png" alt="Tech 9">                         
+            <!-- Add more images as needed -->
+          </div>
+        </section>
+        <button class="utilisation-btn" data-target="amdocs-devops-details">How they were utilised</button>
+        <ul id="amdocs-devops-details" class="utilisation-content">
+          <li>Reduced system downtime by 17% through proactive monitoring using liveness and readiness probes, ensuring 99.9% system stability. Acquired proficiency in Go lang during the project.</li>
+          <li>Enhanced product capabilities and user satisfaction by introducing new features and supporting backtracking functionalities in ECS assembly.</li>
+          <li>Optimized resource allocation and increased overall system performance by 25% by leading resource profiling efforts and creating 30+ Helm charts for various services.</li>
+          <li>Expedited migration process and improved configuration accuracy by 15% by authoring manifest files (domain and environment descriptors).</li>
+          <li>Contributed to a 20% reduction in deployment time by successfully migrating the Evolved Charging Suite (ECS) to Amdocs CI/CD platform MPDK, implementing pipelines in Jenkins, and establishing repositories for 4 projects.</li>
+        </ul>        
       </article>
       <article>
         <h3>Software Engineer (Infra Developer) </h3>
@@ -68,14 +88,16 @@
         </ul>
       </article>
       <article>
-        <h3>Ritusha Consultant Private Ltd. - Bhubaneswar, Odisha</h3>
-        <h4>Winter Trainee - December 2019</h4>
+        <h3>Winter Trainee </h3>
+        <h4>Ritusha Consultant Private Ltd. - Bhubaneswar, Odisha (December 2019 - Jan 2020)</h4>
         <section class="tech-used">
           <h4>Tech Used</h4>
           <div class="tech-images">
             <!-- Add images here -->
             <img src="images\image7.png" alt="Tech 7">           
-            <img src="images\image8.png" alt="Tech 8">                       
+            <img src="images\image8.png" alt="Tech 8">  
+            <img src="images\image12.png" alt="Tech 12">   
+            <img src="images\image13.png" alt="Tech 13">                        
             <!-- Add more images as needed -->
           </div>
         </section>
@@ -86,16 +108,61 @@
         </ul>
       </article>
     </section>
+<!-- New Projects Section -->
+<section class="projects">
+  <h2>Projects</h2>
+  <div class="project-columns">
+    <div class="project-column">
+      <img src="images/project1.png" alt="Project 1">
+      <p>A Crypto Coin Wallet </p>
+      <a href="https://github.com/pradipta/project1" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-column">
+      <img src="images/project2.png" alt="Project 2">
+      <p>Flight Delay Prediction</p>
+      <a href="https://github.com/pradipta/project2" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-column">
+      <img src="images/project3.png" alt="Project 3">
+      <p>House Price Sentiment </p>
+      <a href="https://github.com/pradipta/project3" target="_blank">View on GitHub</a>
+    </div>
+    <div class="github-button-container">
+      <a href="https://github.com/pradipta" target="_blank" class="github-button">See My Other Projects</a>
+    </div>
+  </div>
+</section>
     <section class="skills">
-      <h2>Skills & Interests</h2>
-      <button id="show-more-skills">See tech stack</button>
+      <h2>About Me</h2>
+      <p>Hi , I am Pradipta your friendly neighbourhood software engineer. I am a Software Engineer on weekdays and a rider and gamer on weekends .
+
+        Oh, and there's also a dusty guitar in the corner that I occasionally attempt to serenade the neighbours with –- (with mixed results, I might add.)
+        
+        So, if you've got a coding project that needs a hero, some constructive criticism for a fellow adventurer, or just fancy a chat about the latest game (or just about anything), don't be shy – hit me up on the channels below! Cheers ✌︎︎</p>
+      <!-- Social Media Section -->
+<section class="social-media">
+  <div class="social-media-links">
+    <a href="https://twitter.com/prxdpt" target="_blank" class="social-media-link">
+      <img src="images/twitter-icon.png" alt="Twitter Profile">prxdpt
+    </a>
+    <a href="https://instagram.com/prxdpt" target="_blank" class="social-media-link">
+      <img src="images/instagram-icon.png" alt="Instagram Profile">prxdpt
+    </a>
+    <a href="https://youtube.com/yourusername" target="_blank" class="social-media-link">
+      <img src="images/youtube-icon.png" alt="YouTube Profile">Pradipta Roy (No videos yet)
+    </a>
+  </div>
+</section>
+
+      
+        <button id="show-more-skills">See tech stack</button>
       <div id="expanded-skills" style="display: none;">
         <p>GoLang | Python | MySQL | OracleSQL | C++ (DSA) | C++ (OOPs) | Java | AWS | Azure | Jenkins | Jira | Bitbucket | CI/CD | GCP | Perl</p>
       </div>
     </section>
   </main>
   <footer>
-    <p>&copy; Pradipta Roy</p>
+    <p>&copy;2024 Pradipta Roy</p>
   </footer>
   <script>
     const showMoreButton = document.getElementById('show-more-skills');
@@ -107,11 +174,18 @@
     let currentGreetingIndex = 0;
 
     // Function to display greetings in interval
+    // Function to display greetings in interval with fade effect
     function displayGreetings() {
-      greetingsContainer.textContent = greetings[currentGreetingIndex];
-      currentGreetingIndex = (currentGreetingIndex + 1) % greetings.length;
-      setTimeout(displayGreetings, 700); // Interval of 700ms
+      greetingsContainer.style.opacity = 0;
+      setTimeout(() => {
+        greetingsContainer.textContent = greetings[currentGreetingIndex];
+        greetingsContainer.style.opacity = 1;
+        currentGreetingIndex = (currentGreetingIndex + 1) % greetings.length;
+      }, 500); // Duration of fade out
+
+      setTimeout(displayGreetings, 2000); // Total interval time (includes fade in time)
     }
+
 
     // Initial call to start displaying greetings
     displayGreetings();
